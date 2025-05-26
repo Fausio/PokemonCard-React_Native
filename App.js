@@ -11,9 +11,21 @@ const styles = StyleSheet.create({
 });
 
 export default function App() {
+
+  const carmanderData = {
+    name: "Charmander",
+    image: require("./assets/charmander.png"),
+    type: "Fire",
+    hp: 80,
+    moves: ["Scratch", "Growl", "leer", "Ember"],
+    weakness: ["Water", "Rock"],
+  }
+
+
+
   return (
     <SafeAreaView style={styles.container}>
-      <PokemonCard></PokemonCard>
+      <PokemonCard {...carmanderData}></PokemonCard>
     </SafeAreaView>
   );
 }
