@@ -1,17 +1,19 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import PokemonCard from './Components/PokemonCard'
+
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f5f5f5', 
+    backgroundColor: '#f5f5f5',
   },
 });
 
 export default function App() {
   return (
-    <View style={styles.container}>
-   
-    </View>
+    <SafeAreaView style={styles.container}>
+      <PokemonCard></PokemonCard>
+    </SafeAreaView>
   );
 }
 
